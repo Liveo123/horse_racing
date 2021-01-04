@@ -1,0 +1,61 @@
+Two datasets were chosen for analysis:
+
+1) Red Wine Quality Data Set [1] - Taken from the UCI Machine Learning Repositaory.                                                     This data set 1599 records, with 12 attributes, 11  containing floating point measuring a variety of elements of the wine and the final attribute (quiality) describing the.  As described with the data set notes, "What might be an interesting thing to do, is aside from using regression modelling, is to set an arbitrary cutoff for your dependent variable (wine quality) at e.g. 7 or higher getting classified as 'good/1' and the remainder as 'not good/0'." [2]
+
+For reference, a random sample of the data:
+
+fixed acidity  volatile acidity  citric acid  residual sugar  chlorides  \
+1438            7.0              0.59          0.0             1.7      0.052   
+
+      free sulfur dioxide  total sulfur dioxide  density    pH  sulphates  \
+1438                  3.0                   8.0    0.996  3.41       0.47   
+
+      alcohol  quality  
+1438     10.3        5  
+
+Data Correlation
+
+As can be seen from the count of different quality values in digram (1), the values range from 3 to 8, with the most siginifant counts abeing for 5 and 6.
+
+To examine any patterns of Correlation between any of  the different attributes, a correlation matrix was plotted (see diagram (2)).  The attributes the correlated with the highest positive values include: citric acid vs. fixed acidity 0.7 
+density vs. fixed acidity 0.7
+total sulfur dioxide vs. free sulfur dioxide 0.7
+Citric acid vs. volatile acid 0.6 
+alcohol vs. quality 0.5
+
+For negatively correlated data (which is just as significant as positive):
+
+pH vs Fixed Acidity -0.7
+citric acid vs volatile acidity -0.6 
+alcohol vs. density -0.5
+
+When we take the average if the sums of all of the absolute correlation values for each attributre, we can get some idea of the total correlation value for each:
+
+Fixed Acidity 0.3
+Citric Acid 0.29
+pH 0.28
+Density 0.21
+Alcohol 0.2
+Sulphates 0.18
+Chlorides 0.15
+Total Sulfur Dioxides 0.15
+Free Sulfur Dioxide 1.15
+Residual Sugar 0.11
+
+
+To understand if there are any diffences when comparing the different levels of quality three box plots will be plotted for some of the more signifant data points.  These box plots will be taken for each of the different levels.  
+
+As expected, the results (diagram (3)) show that there are relatively strong correlations for each of the top 5 correlation values, and these are the attributes that are expected to be strongest in most machine leartning contexts.  
+
+The box plot for the attribute with the least correlation has been shown for comparison.  It seems that the different levels of quality show only a little useful information. 
+
+From (3)a, we can see that the att
+
+2) Breast Cancer Data Set [2] -  
+with 10 different features covering things such as Clump Thickness and Uniformity of Cell
+Size. The dataset also has a Class column containing either 2 for benign or 4 for malignant.
+
+
+
+The different datasets were chosen to compare very simple data ranging over boolean
+values against more complex data with differing metric ranges.
