@@ -1,4 +1,4 @@
-Two datasets were chosen for analysis:
+﻿Two datasets were chosen for analysis:
 
 1) Red Wine Quality Data Set [1] - Taken from the UCI Machine Learning Repositaory.                                                     This data set 1599 records, with 12 attributes, 11  containing floating point measuring a variety of elements of the wine and the final attribute (quiality) describing the.  As described with the data set notes, "What might be an interesting thing to do, is aside from using regression modelling, is to set an arbitrary cutoff for your dependent variable (wine quality) at e.g. 7 or higher getting classified as 'good/1' and the remainder as 'not good/0'." [2]
 
@@ -43,11 +43,11 @@ Free Sulfur Dioxide 1.15
 Residual Sugar 0.11
 
 
-To understand if there are any diffences when comparing the different levels of quality three box plots will be plotted for some of the more signifant data points.  These box plots will be taken for each of the different levels.  
+To understand if there are any differences when comparing the different levels of quality three box plots will be plotted for some of the more significant data points.  These box plots will be taken for each of the different levels.  
 
-As expected, the results (diagram (3)) show that there are relatively strong correlations for each of the top 5 correlation values, and these are the attributes that are expected to be strongest in most machine leartning contexts.  
+As expected, the results (diagram (3)) show that there are relatively strong correlations for each of the top 5 median values, as well as first and third quartile ranges. The minimums and maximums seem to have no relationships.  These are the attributes that are expected to be strongest in most machine leartning contexts.  
 
-The box plot for the attribute with the least correlation has been shown for comparison.  It seems that the different levels of quality show only a little useful information. 
+The box plot for the attribute with the least correlation has been shown for comparison.  It seems that the different levels of quality all seem to be very similar and so give little information for comparison. 
 
 From (3)a, we can see that the att
 
@@ -59,3 +59,5 @@ Size. The dataset also has a Class column containing either 2 for benign or 4 fo
 
 The different datasets were chosen to compare very simple data ranging over boolean
 values against more complex data with differing metric ranges.
+
+The Confusion Matrix in 
